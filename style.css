@@ -1,0 +1,255 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(36, 36, 36);
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+}
+.art {
+}
+.card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+.title {
+  font-weight: 600;
+}
+.data {
+  font-weight: 500;
+}
+a {
+  color: #2c747a;
+  margin: 0;
+  padding: 0;
+}
+.columnInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.colors {
+  display: flex;
+  gap: 8px;
+  margin-top: 5px;
+  flex-wrap: wrap;
+}
+.color {
+  display: flex;
+}
+.border {
+  border: 2px solid black;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px;
+}
+.card-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+.art,
+.details {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.details {
+  width: 560px;
+  height: 588px;
+  background-color: white;
+  border: 21px solid black;
+  transform: rotateY(180deg);
+}
+.row {
+  display: flex;
+}
+.bg {
+  background-color: #48d0dd;
+  width: 20px;
+  height: 21px;
+}
+.squareWhite {
+  background-color: white;
+  width: 20px;
+  height: 21px;
+}
+.squareBlack {
+  background-color: #0e0e0e;
+  width: 20px;
+  height: 21px;
+}
+.squareDarkRed {
+  background-color: #b5525a;
+  width: 20px;
+  height: 21px;
+}
+.squareLightRed {
+  background-color: #e65252;
+  width: 20px;
+  height: 21px;
+}
+.squareLightGray {
+  background-color: #f9f9f9;
+  width: 20px;
+  height: 21px;
+}
+.squareMediumGray {
+  background-color: #dedede;
+  width: 20px;
+  height: 21px;
+}
+.squareDarkGray {
+  background-color: #525252;
+  width: 20px;
+  height: 21px;
+}
+.squareLightYellow {
+  background-color: #f7d631;
+  width: 20px;
+  height: 21px;
+}
+.squareMediumYellow {
+  background-color: #c5a529;
+  width: 20px;
+  height: 21px;
+}
+.squareDarkYellow {
+  background-color: #9c8442;
+  width: 20px;
+  height: 21px;
+}
+.squareDarkDarkYellow {
+  background-color: #a56b31;
+  width: 20px;
+  height: 21px;
+}
+.squareMediumGreen {
+  background-color: #63ce63;
+  width: 20px;
+  height: 21px;
+}
+.squareLightGreen {
+  background-color: #bde6bd;
+  width: 20px;
+  height: 21px;
+}
+.squareLightLightRed {
+  background-color: #f76352;
+  width: 20px;
+  height: 21px;
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 12px;
+  }
+  a {
+    word-break: break-all;
+  }
+  .details {
+    width: 260px;
+    height: 288px;
+    background-color: white;
+    border: 11px solid black;
+    transform: rotateY(180deg);
+  }
+  .list {
+    margin: 10px;
+    gap: 8px;
+  }
+  .bg {
+    background-color: #48d0dd;
+    width: 10px;
+    height: 11px;
+  }
+  .squareWhite {
+    background-color: white;
+    width: 10px;
+    height: 11px;
+  }
+  .squareBlack {
+    background-color: #0e0e0e;
+    width: 10px;
+    height: 11px;
+  }
+  .squareDarkRed {
+    background-color: #b5525a;
+    width: 10px;
+    height: 11px;
+  }
+  .squareLightRed {
+    background-color: #e65252;
+    width: 10px;
+    height: 11px;
+  }
+  .squareLightGray {
+    background-color: #f9f9f9;
+    width: 10px;
+    height: 11px;
+  }
+  .squareMediumGray {
+    background-color: #dedede;
+    width: 10px;
+    height: 11px;
+  }
+  .squareDarkGray {
+    background-color: #525252;
+    width: 10px;
+    height: 11px;
+  }
+  .squareLightYellow {
+    background-color: #f7d631;
+    width: 10px;
+    height: 11px;
+  }
+  .squareMediumYellow {
+    background-color: #c5a529;
+    width: 10px;
+    height: 11px;
+  }
+  .squareDarkYellow {
+    background-color: #9c8442;
+    width: 10px;
+    height: 11px;
+  }
+  .squareDarkDarkYellow {
+    background-color: #a56b31;
+    width: 10px;
+    height: 11px;
+  }
+  .squareMediumGreen {
+    background-color: #63ce63;
+    width: 10px;
+    height: 11px;
+  }
+  .squareLightGreen {
+    background-color: #bde6bd;
+    width: 10px;
+    height: 11px;
+  }
+  .squareLightLightRed {
+    background-color: #f76352;
+    width: 10px;
+    height: 11px;
+  }
+}
